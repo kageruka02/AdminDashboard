@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+body {
+  background-color: var(--sidebarbutton-color);
+  --sidebarbutton-color: #0284c7;
+  --grey-color: #e2e8f0;
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
+}
+.wholediv {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.sidebar {
+  background-color: var(--sidebarbutton-color);
+  color: white;
+  min-width: 150px;
+  width: 20%;
+  height: 883px;
+  display: grid;
+  grid-template-rows: 1fr 4fr 4fr;
+  gap: 20px;
+  padding-bottom: 200px;
+  padding-top: 20px;
+  font-size: 1.2rem;
+}
+.dashboard-iconsdiv {
+  display: inline-flex;
+  justify-content: center;
+  width: 20%;
+  margin-right: 9px;
+}
+.magnify {
+  display: inline-flex;
+  justify-content: center;
+  width: 25px;
+}
+
+.sidebar > div:first-child,
+li {
+  display: flex;
+  align-items: center;
+  /* background-color: red; */
+  padding-left: 5%;
+}
+li {
+  margin-bottom: 20px;
+}
+.icons {
+  width: 30%;
+}
+ul {
+  list-style-type: none;
+}
+.dashboard {
+  width: 60%;
+}
+.first-part-header,
+.second-part-header {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+.first-part-header,
+.second-part-header {
+  justify-content: space-between;
+  gap: 70px;
+  padding-right: 10%;
+}
+.second-part-header {
+  padding-right: 7%;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+}
+.firstdiv {
+  flex: 7;
+  display: flex;
+  gap: 20px;
+}
+.seconddiv {
+  flex: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width:211px;
+}
+input {
+  width: 80%;
+  height: 40px;
+  border-radius: 20px;
+  background-color: var(--grey-color);
+  border: none;
+}
+.header {
+  padding-left: 30px;
+  padding-top: 30px;
+  /* padding-bottom: 30px; */
+  width: 100%;
+  box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.7);
+  z-index: 10;
+  position: relative;
+  background-color: white;
+  /* border-bottom: solid --grey-color; */
+}
+.bellring {
+  width: 30px;
+}
+.dummyprofile,
+.dummyprofile3 {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  background-color: #f4ab6a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dummyprofile3 {
+  background-color: white;
+}
+.dummyprofile2 {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: #f4ab6a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dummyprofile2img {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+.dummyprofileimg {
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+}
+.container {
+  width: 80%;
+}
+.second-part-firstdiv {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+}
+.blue-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 110px);
+  gap: 20px;
+}
+.blue-buttons > div {
+  background-color: var(--sidebarbutton-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  height: 40px;
+}
+.main-content {
+  background-color: var(--grey-color);
+  z-index: 1;
+  display: grid;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  grid-template-columns: 1fr 300px;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+.main-content h2{
+  margin-bottom:13px;
+
+}
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+.article {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 200px;
+}
+.icons-article {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.icons-article > div {
+  width: 20px;
+}
+.announcements-trending {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  /* row-gap: 35px; */
+}
+.announcementshit,
+.trendingshit {
+  background-color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.announcementshit > div {
+  border-bottom: solid grey;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.announcementshit > :last-child {
+  border-bottom: none;
+}
+.trendingshit > div {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.Trending {
+  margin-top: 40px;
+}
