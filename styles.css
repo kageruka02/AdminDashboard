@@ -24,7 +24,6 @@ h6 {
   overflow-wrap: break-word;
 }
 body {
-  background-color: var(--sidebarbutton-color);
   --sidebarbutton-color: #0284c7;
   --grey-color: #e2e8f0;
   font-size: 14px;
@@ -40,7 +39,7 @@ body {
   color: white;
   min-width: 150px;
   width: 20%;
-  height: 883px;
+  /* height: 100vh; */
   display: grid;
   grid-template-rows: 1fr 4fr 4fr;
   gap: 20px;
@@ -106,7 +105,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-width:211px;
+  min-width: 211px;
 }
 input {
   width: 80%;
@@ -195,9 +194,8 @@ input {
   gap: 20px;
   padding-bottom: 20px;
 }
-.main-content h2{
-  margin-bottom:13px;
-
+.main-content h2 {
+  margin-bottom: 13px;
 }
 .projects {
   display: grid;
